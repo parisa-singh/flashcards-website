@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container create-layout">
+        <div class="left-panel">
+            <h1>Create Flashcards</h1>
+            <button class="btn back-btn" onclick="window.location.href='index.html'">⬅ Back</button>
+
+            <input type="text" id="set-name" class="input" placeholder="Enter set name">
+
+            <div id="flashcards-input">
+                <input type="text" placeholder="Question" id="question" class="input">
+                <input type="text" placeholder="Answer" id="answer" class="input">
+                <button class="btn add-card-btn" onclick="addFlashcard()">➕ Add</button>
+            </div>
+
+            <button class="btn save-btn" onclick="saveFlashcards()">💾 Save Set</button>
+        </div>
+
+        <div class="right-panel">
+            <h2>Flashcards in Set</h2>
+            <div id="flashcard-list"></div>
+        </div>
+    </div>
+
+    <script src="create.js"></script>
+</body>
+</html>

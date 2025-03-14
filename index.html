@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aesthetic Flashcards</title>
+    <title>Flashcards Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Flashcards</h1>
+        <h1>📚 Flashcards</h1>
         <button id="toggle-theme">🌙</button>
-        <div class="flashcard-container">
-            <div class="flashcard">
-                <div class="front">Question</div>
-                <div class="back">Answer</div>
-            </div>
-        </div>
-        <button id="next-card">Next</button>
+        <button class="btn create-btn" onclick="window.location.href='create.html'">➕ Create New Set</button>
+        <button class="btn manage-btn" onclick="window.location.href='menu.html'">📂 Manage Sets</button>
     </div>
 
     <script src="script.js"></script>
